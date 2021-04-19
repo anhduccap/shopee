@@ -88,12 +88,41 @@
     right: 0;
     width: 404px;
     background-color: var(--color-white);
+    transform-origin: top;
+    animation: showNotification linear .15s;
+}
+.header__notification::before{
+    content: "";
+    position: absolute;
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    top: -28px;
+    right: 19px;
+}
+.header__notification::after{
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 11px;
+    top: -11px;
+    right: 5px;
+}
+@keyframes showNotification{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .header__notification-heading {
     padding-left: 8px;
 }
 .header__notification-heading:hover{
-    cursor: pointer;
+    cursor: default;
 }
 .header__notification-heading h3{
     color: #999;
@@ -113,6 +142,9 @@
 }
 .header__notification-item:hover{
     background-color: #f8f8f8;
+}
+.header__notification-item--seen{
+    background-color: var(--color-white);
 }
 .header__notification-link{
     display: flex;
@@ -139,19 +171,19 @@
     font-weight: 400;
     margin: 0 0 8px 0;
 }
-.header__notification-footer{
-    text-align: center;
-    padding: 12px 0;
-}
 .header__notification-footer:hover{
     background-color: #f8f8f8;
-    cursor: pointer;
 }
 .header__notification-footer a{
+    display: block;
+    /*width 100% -> can click link on full width*/
+    width: 100%; 
     text-decoration: none;
     color: rgba(0, 0, 0, .8);
     font-weight: 400;
     font-size: 1.5rem;
+    padding: 12px 0;
+    text-align: center;
 }
 
 
