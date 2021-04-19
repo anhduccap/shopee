@@ -6,10 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/logo.ico" />
     <title>Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/styles/base.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="app">
+        <!------------------ Header start --------------------->
+        <header class="header">
+            <!------ Navbar ------->
+            <div class="grid">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item header__nav-item--right-border">
+                            <a href="#" class="header__nav-item-link">Kênh người bán</a>
+                        </li>
+                        <li class="header__nav-item header__nav-item--right-border header__nav-item--show-qr">
+                            <a href="#" class="header__nav-item-link">Tải ứng dụng</a>
+                            <div class="header__qr">
+                                <img src="./assets/images/qrcode.png" class="header__qr-img" alt="QR Code">
+                                <div class="header__qr-info">
+                                    <a href="#" class="header__qr-info-item">
+                                        <img src="./assets/images/appstore.png" alt="App Store">
+                                    </a>
+                                    <a href="#" class="header__qr-info-item">
+                                        <img src="./assets/images/googleplay.png" alt="Google Play">
+                                    </a>
+                                    <a href="#" class="header__qr-info-item">
+                                        <img src="./assets/images/appgallery.png" alt="App Gallery">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">Kết nối</li>
+                        <li class="header__nav-item">
+                            <a href="" class="header__nav-item-icon">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__nav-item-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item header__notification--show">
+                            <a href="#" class="header__nav-item-link">
+                                <i class="far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notification">
+                                <div class="header__notification-heading">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </div>
+                                <div class="header__notification-content">
+                                    <!--List notification-->
+                                    <ul class="header__notification-list">
+                                        <!--Notification 1-->
+                                        <li class="header__notification-item">
+                                            <a href="#" class="header__notification-link">
+                                                <div class="notification__img">
+                                                    <img src="./assets/images/notification1.png" alt="Notification Image">
+                                                </div>
+                                                <div class="notification__description">
+                                                    <h4>
+                                                        Còn 3 Tiếng chốt deal 1K
+                                                    </h4>
+                                                    <h5>
+                                                        ⚡ Bùng nổ deal KHỦNG chỉ từ 1K ⏰ Nạp thẻ điện thoại 100K chỉ 1K 🚛 Chốt đơn với mã Freeship 0Đ 🔥 Vào săn ngay!
+                                                    </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!--Notification 2-->
+                                        <li class="header__notification-item">
+                                            <a href="#" class="header__notification-link">
+                                                <div class="notification__img">
+                                                    <img src="./assets/images/notification1.png" alt="Notification Image">
+                                                </div>
+                                                <div class="notification__description">
+                                                    <h4>
+                                                        Khám loạt deal cực rẻ từ 1K, 9K
+                                                    </h4>
+                                                    <h5>
+                                                        🚛 Mua cùng mã Freeship đơn 0Đ 🔥 Chốt đơn ngay!
+                                                    </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!--Notification 3-->
+                                        <li class="header__notification-item">
+                                            <a href="#" class="header__notification-link">
+                                                <div class="notification__img">
+                                                    <img src="./assets/images/notification3.png" alt="Notification Image">
+                                                </div>
+                                                <div class="notification__description">
+                                                    <h4>
+                                                        Còn 3 Tiếng chốt deal 1K
+                                                    </h4>
+                                                    <h5>
+                                                        ⚡ Bùng nổ deal KHỦNG chỉ từ 1K ⏰ Nạp thẻ điện thoại 100K chỉ 1K 🚛 Chốt đơn với mã Freeship 0Đ 🔥 Vào săn ngay!
+                                                    </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!--Notification 4-->
+                                        <li class="header__notification-item">
+                                            <a href="#" class="header__notification-link">
+                                                <div class="notification__img">
+                                                    <img src="./assets/images/notification4.png" alt="Notification Image">
+                                                </div>
+                                                <div class="notification__description">
+                                                    <h4>
+                                                        Còn 3 Tiếng chốt deal 1K
+                                                    </h4>
+                                                    <h5>
+                                                        ⚡ Bùng nổ deal KHỦNG chỉ từ 1K ⏰ Nạp thẻ điện thoại 100K chỉ 1K 🚛 Chốt đơn với mã Freeship 0Đ 🔥 Vào săn ngay!
+                                                    </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header__notification-footer">
+                                    <a href="#" class="">Xem Tất Cả</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-item-link">
+                                <i class="far fa-question-circle"></i>
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="header__nav-item header__nav-item--right-border">
+                            <a href="#" class="header__nav-item-link">Đăng ký</a></li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-item-link">Đăng nhập</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!------------------- Header end ---------------------->
+        <!----------------------------------------------------->
+        <!------------------ Content start -------------------->
+        <div class="container">
+
+        </div>
+        <!------------------ Content end --------------------->
+        <!----------------------------------------------------->
+        <!------------------ Footer start -------------------->
+        <footer class="footer">
+
+        </footer>
+        <!----------------------------------------------------->
+    </div>
 </body>
 </html>
