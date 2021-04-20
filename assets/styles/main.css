@@ -7,8 +7,7 @@
     background: 
         linear-gradient(-180deg, 
         var(--color-primary),
-        var(--color-secondary));  
-    z-index: 999;
+        var(--color-secondary));
 }
 .header__nav {
     display: flex;
@@ -186,4 +185,113 @@
     text-align: center;
 }
 
+/*---------- Modal ----------*/
+.auth-form{
+    width: 500px;
+    background-color: var(--color-white);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.auth-form__container{
+    padding: 36px;
+}
+
+.auth-form__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    margin-bottom: 48px;
+}
+
+.auth-form__heading{
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.auth-form__switch-btn{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.auth-form__form{
+    margin-bottom: 16px;
+}
+
+.auth-form__group{
+    padding: 8px 0;
+}
+
+.auth-form__input{
+    border: 1.5px solid #dbdbdb;
+    width: 100%;
+    border-radius: 2px;
+    line-height: 2.5;
+    font-size: 1.8rem;
+    padding-left: 12px;
+    outline: none;
+}
+.auth-form__input:focus{
+    border-color: #888;
+}
+
+.auth-form__plus{
+    padding: 0 8px;
+    font-size: 1.5rem;
+    margin-bottom: 120px;
+}
+.auth-form__policy-text{
+    text-align: center;
+}
+
+.auth-form__text-link{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.auth-form__control{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__control-back{
+    margin: 0 8px;
+}
+.auth-form__control-back:hover{
+    background-color: #eee
+}
+
+.auth-form__social{
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 20px 36px;
+    justify-content: space-between;
+}
+
+.auth-form__social-text{
+    font-size: 1.6rem;
+    margin: 0 16px;
+    color: var(--color-white);
+}
+
+.auth-form__social--btn{
+    display: flex;
+    align-items: center;
+    background-color: #1877f2;
+}
+
+.auth-form__social--btn i {
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.auth-form__social--btn:hover{
+    opacity: .9;
+}
 

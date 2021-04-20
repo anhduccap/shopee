@@ -33,3 +33,7 @@ Always have `app` class contains all website's components
 - Create QR Code hover: `Tải ứng dunjg` will have `position: relative` and QR code will have `position: absolute`
 - In QR notification component, when we add images (logo app store, google play,...) without `a tag` cover outside, the image will be distorted (méo mó)
 - When we hover on `li`tag, QR code will be appear, but we can't hover on QR code because `.header__nav-item--show-qr:hover .header__qr` class active when hover on `li` -> We can add a pseudo element (::after)
+#### 2. Modal login/register
+- When we click on "Đăng nhập" or "Đăng ký" button, the modal form will be shown: modal__overlay is a rgba color layer with opacity < 1 -> show below components 
+- Default z-index of an element equal to 0 -> body is above the overlay because it's add later
+- We wanna body always above -> set z-index = 1
