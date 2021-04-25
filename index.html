@@ -239,8 +239,12 @@
                                                 <img src="./assets/images/cart_item_1.jfif" alt="">
                                             </div>
                                             <div class="cart-item__desc">
-                                                <p class="cart-item__text">mũ bảo hiểm 3/4 đầu chính hãng</p>
-                                                <p class="cart-item__price">145.000đ</p>
+                                                <div class="cart-item__text">
+                                                    <p>mũ bảo hiểm 3/4 đầu chính hãng</p>
+                                                </div>
+                                                <div class="cart-item__price">
+                                                    <p>145.000đ</p>
+                                                </div>
                                             </div>
                                         </li>
                                         <li class="products__item">
@@ -248,8 +252,12 @@
                                                 <img src="./assets/images/cart_item_2.jfif" alt="">
                                             </div>
                                             <div class="cart-item__desc">
-                                                <p class="cart-item__text">giá đỡ laptop (silver)</p>
-                                                <p class="cart-item__price">99.000đ</p>
+                                                <div class="cart-item__text">
+                                                    <p>giá đỡ laptop (silver)</p>
+                                                </div>
+                                                <div class="cart-item__price">
+                                                    <p>99.000đ</p>
+                                                </div>
                                             </div>
                                         </li>
                                         <li class="products__item">
@@ -257,8 +265,51 @@
                                                 <img src="./assets/images/cart_item_3.jfif" alt="">
                                             </div>
                                             <div class="cart-item__desc">
-                                                <p class="cart-item__text">apple macbook air (2020) m1</p>
-                                                <p class="cart-item__price">25.590.000đ</p>
+                                                <div class="cart-item__text">
+                                                    <p>apple macbook air (2020) m1</p>
+                                                </div>
+                                                <div class="cart-item__price">
+                                                    <p>25.590.000đ</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="products__item">
+                                            <div class="cart-item__img">
+                                                <img src="./assets/images/cart_item_1.jfif" alt="">
+                                            </div>
+                                            <div class="cart-item__desc">
+                                                <div class="cart-item__text">
+                                                    <p>mũ bảo hiểm 3/4 đầu chính hãng</p>
+                                                </div>
+                                                <div class="cart-item__price">
+                                                    <p>145.000đ</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="products__item">
+                                            <div class="cart-item__img">
+                                                <img src="./assets/images/cart_item_2.jfif" alt="">
+                                            </div>
+                                            <div class="cart-item__desc">
+                                                <div class="cart-item__text">
+                                                    <p>giá đỡ laptop (silver)</p>
+                                                </div>
+                                                <div class="cart-item__price">
+                                                    <p>99.000đ</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="products__item">
+                                            <div class="cart-item__img">
+                                                <img src="./assets/images/cart_item_3.jfif" alt="">
+                                            </div>
+                                            <div class="cart-item__desc">
+                                                <div class="cart-item__text">
+                                                    <p>apple macbook air (2020) m1</p>
+                                                </div>
+                                                <div class="cart-item__price">
+                                                    <p>25.590.000đ</p>
+                                                </div>
                                             </div>
                                         </li>
                                     </ul>
@@ -275,14 +326,772 @@
         <!------------------- Header end ---------------------->
         <!----------------------------------------------------->
         <!------------------ Content start -------------------->
-        <div class="container">
-
+        <div class="app__container">
+            <div class="grid app__content">
+                <div class="grid__row">
+                    <div class="grid__col-2">
+                        <div class="category">
+                            <h3 class="category__heading">DANH MỤC SẢN PHẨM</h3>
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="#" class="category__link category__link--active">TẤT CẢ SẢN PHẨM</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">KHUYẾN MÃI HOT</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">SẢN PHẨM MỚI</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">TOP BÁN CHẠY</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__col-10">
+                        <div class="product-container">
+                            <div class="control-header">
+                                <div class="control-sort">
+                                    <span class="control-sort__label">Sắp xếp theo</span>
+                                    <button class="btn btn--size-s btn--primary">Phổ biến</button>
+                                    <button class="btn btn--size-s btn--normal">Mới nhất</button>
+                                    <button class="btn btn--size-s btn--normal">Bán chạy</button>
+                                    <div class="control-sort__select">
+                                        <span>Giá</span>
+                                        <i class="fas fa-angle-down"></i>
+                                        <div class="control-sort__select-option">
+                                            <ul class="control-sort__select-list">
+                                                <li class="control-sort__select-item">
+                                                    <a href="#">Giá: Thấp đến Cao</a>
+                                                </li>
+                                                <li class="control-sort__select-item">
+                                                    <a href="#">Giá: Cao đến Thấp</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-header">
+                                    <div class="pagination-header__page">
+                                        <span class="pagination-header__current-page">1</span>
+                                        <span class="pagination-header__sum-page">
+                                            / 10
+                                        </span>
+                                    </div>
+                                    <div class="pagination-header__btn">
+                                        <div class="pagination-header__btn-left pagination-header__btn--disable">
+                                            <a href="#" class="pagination-header__btn-icon"><i class="fas fa-angle-left"></i></a>
+                                        </div>
+                                        <div class="pagination-header__btn-right">
+                                            <a href="#" class="pagination-header__btn-icon"><i class="fas fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-view">
+                                <div class="grid__row">
+                                    <!-- PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/6fa674fd4310e547456a03c71169ebe2_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Áo Tập Luyện Đội Tuyển Việt Nam 2020 Grand Sport Đỏ
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">215.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>87</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/78e0782c40cc48cc9d82b80fa0ed97e2_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Áo Bóng Đá Grand Sport 11541 Trắng
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">135.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>35</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/9dc570b15ad9af496a05fe71a053a398_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Áo Thi Đấu Đội Tuyển Bóng Đá Việt Nam 2020 Grand Sport Sân Nhà
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">745.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>62</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/e64f9a87356cd63c00d865bc80433de9_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Áo Thun Di Chuyển Đội Tuyển Việt Nam 2020 Grand Sport Xanh Nhạt
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">625.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>41</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/5752a5cd93909e04d5f3d929151c1a48_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Quần Bóng Đá 01516 Grand Sport Xanh Đen
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">115.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>41</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/efa084a1a1d72cac166558ab6d826fee_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Quần Bóng Đá 01516 Grand Sport Đỏ
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">115.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>49</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/a3afa27085c78f43629c33b94a6afc77_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Quần Bóng Đá 01516 Grand Sport Xanh Dương
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">115.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>28</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/08b3a1b9a0379b2fa25ed4237d4fb98f_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Áo Thi Đấu Đội Tuyển Bóng Đá Việt Nam 2020 Grand Sport Sân Khách
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">745.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>20</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/5f4b3c43a437c8d84efac8efa1df1cb4_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Áo Thun Di Chuyển Đội tuyển Việt Nam 2020 Grand Sport Xanh Đậm
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">625.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>24</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  PRODUCT ITEM  -->
+                                    <div class="grid__col-2-4">
+                                        <div class="product-item">
+                                            <a href="#" class="product-item__block">
+                                                <div class="product-item__img" style="background-image: url(https://cf.shopee.vn/file/f4f273a77a78486337df8ac02418bb1b_tn);"></div>
+                                                <div class="product-item__detail">
+                                                    <h4 class="product-item__name">
+                                                        Dây Nhảy Tốc Độ Grand Sport 377064
+                                                    </h4>
+                                                    <div class="product-item__discount">
+                                                        50% Giảm
+                                                    </div>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-icon">₫</span>
+                                                        <span class="product-item__price-number">125.000</span>
+                                                    </div>
+                                                    <div class="product-item__status product-item__status--liked">
+                                                        <i class="product-item__status-empty far fa-heart"></i>
+                                                        <i class="product-item__status-fill fas fa-heart"></i>
+                                                        <div class="product-item__status-vote product-item__status-vote--4">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <div class="product-item__quantity-ordered">
+                                                            <span>Đã bán</span>
+                                                            <span>13</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__location">TP. Hồ Chí Minh</div>
+                                                </div>
+                                                <div class="product-item__label">
+                                                    <span>Mall</span>
+                                                </div>
+                                                <div class="product-item__label-discount">
+                                                    <h4>50%</h4>
+                                                    <span>GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <button class="pagination__btn">
+                                    <i class="fas fa-angle-left"></i>
+                                </button>
+                                <button class="pagination__btn pagination__btn--active">
+                                    1
+                                </button>
+                                <button class="pagination__btn">
+                                    2
+                                </button>
+                                <button class="pagination__btn">
+                                    3
+                                </button>
+                                <button class="pagination__btn">
+                                    4
+                                </button>
+                                <button class="pagination__btn">
+                                    5
+                                </button>
+                                <button class="pagination__btn">
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!------------------ Content end --------------------->
         <!----------------------------------------------------->
         <!------------------ Footer start -------------------->
         <footer class="footer">
-
+            <div class="footer__first">
+                <div class="grid">
+                    <div class="footer__summary">
+                        <div class="grid__row">
+                            <div class="grid__col-2-4">
+                                <span class="footer__summary-heading">
+                                    CHĂM SÓC KHÁCH HÀNG
+                                </span>
+                                <ul class="footer__summary-list">
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Trung Tâm Trợ Giúp
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Shopee Blog  
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Shopee Mall
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Hướng Dẫn Mua Hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Hướng Dẫn Bán Hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Thanh Toán
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Shopee Xu
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Vận Chuyển
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Trả Hàng & Hoàn Tiền
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Chăm Sóc Khách Hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Chính Sách Bảo Hành
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <span class="footer__summary-heading">
+                                    VỀ SHOPEE
+                                </span>
+                                <ul class="footer__summary-list">
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Giới Thiệu Về Shopee Việt Nam
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Tuyển Dụng
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Điều Khoản Shopee
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Chính Sách Bảo Mật
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Chính Hãng
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Kênh Người Bán
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Flash Sales
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Chương Trình Tiếp Thị Liên Kết Shopee
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-item">
+                                        <a href="#">
+                                            Liên Hệ Với Truyền Thông
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid__col-2-4"></div>
+                            <div class="grid__col-2-4">
+                                <span class="footer__summary-heading">
+                                    THEO DÕI CHÚNG TÔI TRÊN
+                                </span>
+                                <ul class="footer__summary-social-list">
+                                    <li class="footer__summary-social-item">
+                                        <a href="#" class="footer__summary-social-link">
+                                            <i class="fab fa-facebook"></i>
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-social-item">
+                                        <a href="#" class="footer__summary-social-link">
+                                            <i class="fab fa-instagram-square"></i>
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__summary-social-item">
+                                        <a href="#" class="footer__summary-social-link">
+                                            <i class="fab fa-linkedin"></i>
+                                            <span>LinkedIn</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <span class="footer__summary-heading">
+                                    TẢI ỨNG DỤNG SHOPEE NGAY THÔI
+                                </span>
+                                <a href="#" class="footer__summary-download">
+                                    <div class="footer__summary-download-qr"></div>
+                                    <div class="footer__summary-download-app">
+                                        <div class="summary-download-app__item">
+                                            <img src="./assets/images/appstore.png">
+                                        </div>
+                                        <div class="summary-download-app__item">
+                                            <img src="./assets/images/googleplay.png">
+                                        </div>
+                                        <div class="summary-download-app__item">
+                                            <img src="./assets/images/appgallery.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">
+                        <div class="footer__copyright-sign">
+                            © 2021 Shopee. Tất cả các quyền được bảo lưu.
+                        </div>
+                        <div class="footer__copyright-nation">
+                            <span class="copyright-nation__label">
+                                Quốc gia & Khu vực:
+                            </span>
+                            <ul class="copyright-nation__list">
+                                <li class="copyright-nation__item">
+                                    <a href="#">Việt Nam</a>
+                                </li>
+                                <li class="copyright-nation__item">
+                                    <a href="#">Singapore</a>
+                                </li>
+                                <li class="copyright-nation__item">
+                                    <a href="#">Indonesia</a>
+                                </li>
+                                <li class="copyright-nation__item">
+                                    <a href="#">Đài Loan</a>
+                                </li>
+                                <li class="copyright-nation__item">
+                                    <a href="#">Thái Lan</a>
+                                </li>
+                                <li class="copyright-nation__item">
+                                    <a href="#">Malaysia</a>
+                                </li>
+                                <li class="copyright-nation__item">
+                                    <a href="#">Philippines</a>
+                                </li>
+                                <li class="copyright-nation__item">
+                                    <a href="#">Brazil</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__second">
+                <div class="grid">
+                    <div class="footer__policy-list">
+                        <div class="footer__policy-item">
+                            <a href="#" class="footer__policy-link">
+                                CHÍNH SÁCH BẢO MẬT
+                            </a>
+                        </div>
+                        <div class="footer__policy-item">
+                            <a href="#" class="footer__policy-link">
+                                QUY CHẾ HOẠT ĐỘNG
+                            </a>
+                        </div>
+                        <div class="footer__policy-item">
+                            <a href="#" class="footer__policy-link">
+                                CHÍNH SÁCH VẬN CHUYỂN
+                            </a>
+                        </div>
+                        <div class="footer__policy-item">
+                            <a href="#" class="footer__policy-link">
+                                CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__policy-logo">
+                        <img src="./assets/images/policy.png">
+                    </div>
+                    <div class="footer__policy-description">
+                        <p class="policy-description__heading">Công ty TNHH Shopee</p>
+                        <p>Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                        <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                        <p>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!------------------ Footer end -------------------->
         <!----------------------------------------------------->

@@ -1,7 +1,3 @@
-.container{
-    margin-top: 122px;
-    height: 100vh;
-}
 :root{
     --color-primary: #f53d2d;
     --color-secondary: #f63;
@@ -34,7 +30,32 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -5px;
 }
+
+/* --------- TEMP --------- */
+.grid__col-2{
+    padding: 0 5px;
+    width: 16.66667%;
+}
+.grid__col-2-4{
+    padding: 0 5px;
+    width: 20%;
+}
+.grid__col-4{
+    padding: 0 5px;
+    width: 33.33333%;
+}
+.grid__col-10{
+    padding: 0 5px;
+    width: 83.33333%;
+}
+
+
+
+
+
+
 
 /*--------- Button ----------*/
 .btn{
@@ -45,13 +66,18 @@ html{
     border: none;
     text-decoration: none;
     outline: none;
-    background-color: transparent;
+    background-color: #fff;
     color: black;
     padding: 8px;
     border-radius: 2px;
 }
+.btn.btn--normal:hover{
+    background-color: #fcfcfc;
+}
 .btn.btn--size-s{
     min-height: 32px;
+    min-width: 120px;
+    font-size: 1.4rem;
 }
 .btn.btn--disable{
     cursor: default;

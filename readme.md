@@ -41,3 +41,18 @@ Always have `app` class contains all website's components
 - For elements that appear when be interacted (hover to show notifications, QR code, search history,...), we have to put them and their parent in the same block, and set their position is absolute (compare to their parent)
 - When we work with radius-border attribute, notice that pseudo class hover can make design incorrectly. For example with search history, the last element border have no border-radius attribute -> bottom-left and bottom-right angle will be shown incorrectly (using pseudo class last-child)
 !!! UX bug: When we hover on after or before pseudo class, `cursor: pointer` will be disappeared. The cause is after or before pseudo class. It has no cursor attribute.
+
+### Main view
+#### 1. Handling long names using CSS
+- Origin:   aaaaaaaaaaaa
+            aaaaaaaaaaaa
+            aaaaaaaaaaaa
+- Result:   aaaaaaaaaaaa
+            aaaaaaaaa...
+- Solution:
+    `word-wrap: break-word;` : line break
+    `overflow: hidden;` : hides child elements outside of the parent element
+    `display: -webkit-box;`
+    `text-overflow: ellipsis;` : convert words overflowing child elements out of parent element -> ...(work with `white-space: nowrap;`; height, with is fixed)
+    `-webkit-box-orient: vertical;`
+    `-webkit-line-clamp: 2;` : number of rows
