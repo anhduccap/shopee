@@ -91,13 +91,16 @@
         display: none;
     }
     .slide-menu__container{
-        width: 40%;
+        width: 70%;
     }
     .slide-menu__header{
         padding: 0 0 0 20px;
     }
     .slide-menu__header-heading{
         font-size: 2rem;
+    }
+    .slide-menu__user-img{
+        width: 70%;
     }
     .slide-menu__user-name{
         font-size: 1.8rem;
