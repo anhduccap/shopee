@@ -1,0 +1,115 @@
+/*MOBILE & TABLET*/
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        height: 120px;
+    }
+    .header__nav-2nd{
+        height: 60px;
+        padding: 15px 0 10px 0;
+    }
+    .header__menu-mobile-tablet{
+        display: flex;
+    }
+    .slide-menu__checkbox:checked ~ .slide-menu__container {
+        display: flex;
+    }
+    .slide-menu__checkbox:checked ~ .slide-menu__overlay{
+        display: block;
+    }
+    .slide-menu{
+        display: block;
+    }
+    .header__nav-3rd{
+        height: 60px;
+        padding: 5px 0 15px 0;
+    }
+    .nav-2nd__logo{
+        flex: 1;
+        margin: 0;
+    }
+    .nav-2nd__logo a{
+        display: block;
+    }
+    .nav-2nd__logo-icon{
+        height: 35px;
+    }
+    .search__input{
+        height: 40px;
+    }
+    .nav-2nd__cart{
+        width: 80px;
+    }
+    .nav-2nd__cart-quantity{
+        top: -5px;
+        left: 42px;
+    }
+    .nav-2nd__cart-container{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .nav-2nd__cart-notification{
+        top: 45px;
+        right: 10px;
+    }
+    .products__heading{
+        text-align: left;
+    }
+    .cart-item__text{
+        text-align: left;
+    }
+    .app__container{
+        margin-top: 120px;
+    }
+    .app__content{
+        padding-top: 70px;
+    }
+    .mobile-tablet__sort-bar{
+        display: flex;
+    }
+    .nav-3rd__search{
+        display: block;
+    }
+}
+
+/*TABLET*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 739px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    .slide-menu__container{
+        width: 40%;
+    }
+    .slide-menu__header{
+        padding: 0 0 0 20px;
+    }
+    .slide-menu__header-heading{
+        font-size: 2rem;
+    }
+    .slide-menu__user-name{
+        font-size: 1.8rem;
+    }
+    .slide-menu__link{
+        font-size: 1.6rem;
+    }
+    .nav-3rd__search{
+        padding: 0 20px;
+    }
+    .nav-2nd__search-history{
+        left: 20px;
+        right: 20px;
+    }
+}

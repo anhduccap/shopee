@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/styles/base.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/grid.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,9 +21,9 @@
         <!------------------ Header start --------------------->
         <header class="header">
             <!------ Navbar ------->
-            <div class="grid">
+            <div class="grid wide">
                 <!-- First navbar -->
-                <nav class="header__nav">
+                <nav class="header__nav hide-on-mobile-tablet">
                     <ul class="header__nav-list">
                         <li class="header__nav-item header__nav-item--right-border">
                             <a href="#" class="header__nav-item-link">Kênh người bán</a>
@@ -167,6 +169,9 @@
                 </nav>
                 <!-- Second navbar -->
                 <nav class="header__nav-2nd">
+                    <label for="slide-menu__checkbox" class="header__menu-mobile-tablet">
+                        <i class="menu-mobile-tablet__icon fas fa-bars"></i>
+                    </label>
                     <div class="nav-2nd__logo">
                         <a href="#">
                             <svg viewBox="0 0 192 65" class="nav-2nd__logo-icon">
@@ -178,7 +183,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="nav-2nd__search">
+                    <div class="nav-2nd__search hide-on-mobile-tablet">
                         <div class="search__input">
                             <div class="nav-2nd__search-area">
                                 <input type="text" placeholder="Săn deal cực đỉnh">
@@ -203,7 +208,7 @@
                                 <i class="fas fa-search"></i>
                             </div>
                         </div>
-                        <div class="search__suggestion">
+                        <div class="search__suggestion hide-on-mobile-tablet">
                             <ul>
                                 <li><a href="#">Váy</a></li>
                                 <li><a href="#">Son</a></li>
@@ -321,13 +326,76 @@
                         </div>
                     </div>
                 </nav>
+                <!-- 3rd nav -->
+                <nav class="header__nav-3rd">
+                    <div class="nav-3rd__search">
+                        <div class="search__input">
+                            <div class="nav-2nd__search-area">
+                                <input type="text" placeholder="Săn deal cực đỉnh">
+                                <div class="nav-2nd__search-history">
+                                    <h3 class="search-history__heading">
+                                        Lịch sử tìm kiếm
+                                    </h3>
+                                    <ul class="search-history__list">
+                                        <li class="search-history__item">
+                                            <a href="#">quần kaki</a>
+                                        </li>
+                                        <li class="search-history__item">
+                                            <a href="#">giày chạy bộ</a>
+                                        </li>
+                                        <li class="search-history__item">
+                                            <a href="#">đồng hồ thông minh</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="nav-2nd__search-btn">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
         <!------------------- Header end ---------------------->
         <!----------------------------------------------------->
+        <!-- Slide menu on mobile and tablet -->
+        <div class="slide-menu">
+            <input type="checkbox" hidden name="show-hide-slide-menu" class="slide-menu__checkbox" id="slide-menu__checkbox">
+            <label for="slide-menu__checkbox" class="slide-menu__overlay"></label>
+            <div class="slide-menu__container">
+                <div class="slide-menu__header">
+                    <div class="slide-menu__header-heading">MENU</div>
+                    <label for="slide-menu__checkbox" class="slide-menu__header-btn">
+                        <i class="fas fa-angle-double-left"></i>
+                    </label>
+                </div>
+                <div class="slide-menu__user">
+                    <img class="slide-menu__user-img" src="./assets/images/avatar.jfif">
+                    <span class="slide-menu__user-name">anhduccap</span>
+                </div>
+                <div class="slide-menu__content">
+                    <ul class="slide-menu__list">
+                        <li class="slide-menu__item">
+                            <a href="#" class="slide-menu__link">tài khoản của tôi</a></li>
+                        <li class="slide-menu__item">
+                            <a href="#" class="slide-menu__link">đơn mua</a></li>
+                        <li class="slide-menu__item">
+                            <a href="#" class="slide-menu__link">đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------------------------->
         <!------------------ Content start -------------------->
+        <div class="mobile-tablet__sort-bar">
+            <button class="sort-bar__btn">Liên quan</button>
+            <button class="sort-bar__btn sort-bar__btn--active">Mới nhất</button>
+            <button class="sort-bar__btn">Bán chạy</button>
+            <button class="sort-bar__btn">Giá</button>
+        </div>
         <div class="app__container">
-            <div class="grid app__content">
+            <div class="grid wide app__content">
                 <div class="grid__row">
                     <div class="grid__col-2">
                         <div class="category">
@@ -351,7 +419,7 @@
                     <div class="grid__col-10">
                         <div class="product-container">
                             <div class="control-header">
-                                <div class="control-sort">
+                                <div class="control-sort hide-on-mobile-tablet">
                                     <span class="control-sort__label">Sắp xếp theo</span>
                                     <button class="btn btn--size-s btn--primary">Phổ biến</button>
                                     <button class="btn btn--size-s btn--normal">Mới nhất</button>
@@ -855,7 +923,7 @@
         <!------------------ Footer start -------------------->
         <footer class="footer">
             <div class="footer__first">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="footer__summary">
                         <div class="grid__row">
                             <div class="grid__col-2-4">
@@ -1058,7 +1126,7 @@
                 </div>
             </div>
             <div class="footer__second">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="footer__policy-list">
                         <div class="footer__policy-item">
                             <a href="#" class="footer__policy-link">

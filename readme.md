@@ -43,7 +43,7 @@ Always have `app` class contains all website's components
 !!! UX bug: When we hover on after or before pseudo class, `cursor: pointer` will be disappeared. The cause is after or before pseudo class. It has no cursor attribute.
 
 ### Main view
-#### 1. Handling long names using CSS
+#### Handling long names using CSS
 - Origin:   aaaaaaaaaaaa
             aaaaaaaaaaaa
             aaaaaaaaaaaa
@@ -56,3 +56,5 @@ Always have `app` class contains all website's components
     `text-overflow: ellipsis;` : convert words overflowing child elements out of parent element -> ...(work with `white-space: nowrap;`; height, with is fixed)
     `-webkit-box-orient: vertical;`
     `-webkit-line-clamp: 2;` : number of rows
+
+### Responsive
